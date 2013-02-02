@@ -1,0 +1,28 @@
+{
+  "name": "faced",
+  "version": "0.0.1",
+  "description": "faced is a light-weight library to identify faces and it's features such as eyes, nose and mouth",
+  "main": "lib/faced.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "opencv": "~0.0.9",
+    "underscore": "~1.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gordalina/faced.git"
+  },
+  "keywords": [
+    "face detection",
+    "face",
+    "detection"
+  ],
+  "author": "Samuel Gordalina",
+  "license": "MIT"
+}
