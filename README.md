@@ -8,13 +8,13 @@ faced is a light-weight library to identify faces and it's features such as eyes
 ## Identify your first face
 
 ```javascript
-faced = new Faced();
+var faced = new Faced();
 faced.detect('image.jpg', function (faces, image) {
   if (!faces) {
     return console.log("No faces found!");
   }
 
-  var face = face[0];
+  var face = sface[0];
 
   console.log(
     "Found a face at %d,%d with dimensions %dx%d",
@@ -25,8 +25,8 @@ faced.detect('image.jpg', function (faces, image) {
   );
 
   console.log(
-    "What a pretty face, it %s a mount, it %s a nose, it % a left eye and it %s a right eye!",
-    face.getMount() ? "has" : "does not have",
+    "What a pretty face, it %s a mouth, it %s a nose, it % a left eye and it %s a right eye!",
+    face.getMouth() ? "has" : "does not have",
     face.getNose() ? "has" : "does not have",
     face.getEyeLeft() ? "has" : "does not have",
     face.getEyeRight() ? "has" : "does not have",
