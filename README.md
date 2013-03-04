@@ -44,41 +44,29 @@ If there were no issues loading the image you should receive two arguments to yo
 
 In case of error, the callback function is called with no arguments.
 
-### Feature.getX()
-Returns the upper X position of the face;
+### Class `Feature`
+ - `Feature.getX()` Returns the upper X position of the face
+ - `Feature.getY()` Returns the upper Y position of the face
+ - `Feature.getX2()` Returns the lower X position of the face
+ - `Feature.getY2()` Returns the lower Y position of the face
+ - `Feature.getWidth()` Returns the width
+ - `Feature.getHeight()` Returns the height
+ - `Feature.intersect(Feature)` Returns the percentage of shared spaced that the current feature has with the given argument Feature. *Although this is used internally it might be useful for client usage.*
 
-### Feature.getX()
-Returns the upper Y position of the face;
+### Class `Face` (extends `Feature`)
 
-### Feature.getX()
-Returns the lower X position of the face;
+All of the following method1s return an instance of `Feture` or `undefined` if it could not detect.
 
-### Feature.getX()
-Returns the lower Y position of the face;
+ - `Face.getMouth()`
+ - `Face.getNose()`
+ - `Face.getEyeLeft()`
+ - `Face.getEyeRight()`
 
-### Feature.getX()
-Returns the upper left X position of the face;
+Other significant methods
 
-### Feature.getX()
-Returns the width face;
-
-### Feature.getX()
-Returns the width face;
-
-### Face
-`Face` extends `Feature`
-
-### Face.getMouth()
-Returns an instance of `Feature` or undefined if it could not detect it.
-
-### Face.getNose()
-Returns an instance of `Feature` or undefined if it could not detect it.
-
-### Face.getEyeLeft()
-Returns an instance of `Feature` or undefined if it could not detect it.
-
-### Face.getEyeRight()
-Returns an instance of `Feature` or undefined if it could not detect it.
+ - `Face.getFeature(name)` Returns a feature by name. Possible names are: `mouth`, `nose`, `eyeLeft` and `eyeRight`.
+ - `Face.getFeatures()` Returns an array of `Feature` that the instance has detected.
+ - `Face.getFeatureCount()` Returns the number of detected features.
 
 ## Examples
 See the folder `examples`
