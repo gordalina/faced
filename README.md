@@ -69,7 +69,12 @@ Other significant methods
  - `Face.getFeatureCount()` Returns the number of detected features.
 
 ## Examples
-See the folder `examples`
+
+```bash
+$ node examples/gioconda.js
+```
+
+Then open extamples/gioconda.features.jpg
 
 ## Information
 

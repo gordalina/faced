@@ -6,7 +6,7 @@ var Faced = require('./../lib/faced');
 
 var faced = new Faced();
 
-faced.detect('./gioconda.jpg', function (faces, image) {
+faced.detect(__dirname + '/gioconda.jpg', function (faces, image) {
     var colors = {
         "face": [0, 0, 0],
         "mouth": [255, 0, 0],
@@ -39,5 +39,5 @@ faced.detect('./gioconda.jpg', function (faces, image) {
         });
     });
 
-    image.save('./gioconda.features.jpg');
+    image.save(__dirname + '/gioconda.features.jpg');
 });
