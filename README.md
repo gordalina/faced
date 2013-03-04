@@ -3,7 +3,12 @@
 faced is a light-weight library to identify faces and it's features such as eyes, nose and mouth. It requires opencv.
 
 ## Install
-`npm install faced`
+
+### As a dependency to your project
+Just add `"faced": "~1.0",` to your dependencies list in `package.json`.
+
+### Globally
+`npm install -g faced`
 
 ## Identify your first face
 
@@ -45,10 +50,10 @@ If there were no issues loading the image you should receive two arguments to yo
 In case of error, the callback function is called with no arguments.
 
 ### Class `Feature`
- - `Feature.getX()` Returns the upper X position of the face
- - `Feature.getY()` Returns the upper Y position of the face
- - `Feature.getX2()` Returns the lower X position of the face
- - `Feature.getY2()` Returns the lower Y position of the face
+ - `Feature.getX()` Returns the upper left corner X position of the face
+ - `Feature.getY()` Returns the upper left corner Y position of the face
+ - `Feature.getX2()` Returns the lower right corner X position of the face
+ - `Feature.getY2()` Returns the lower right conrner Y position of the face
  - `Feature.getWidth()` Returns the width
  - `Feature.getHeight()` Returns the height
  - `Feature.intersect(Feature)` Returns the percentage of shared spaced that the current feature has with the given argument Feature. *Although this is used internally it might be useful for client usage.*
