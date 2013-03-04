@@ -74,7 +74,7 @@ Other significant methods
 $ node examples/gioconda.js
 ```
 
-Then open extamples/gioconda.features.jpg
+Then open `examples/gioconda.features.jpg` on your favourite image viewer.
 
 ## Information
 
