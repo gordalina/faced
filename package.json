@@ -1,6 +1,6 @@
 {
   "name": "faced",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "faced is a light-weight library to identify faces and it's features such as eyes, nose and mouth",
   "main": "lib/faced.js",
   "directories": {
