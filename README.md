@@ -2,6 +2,9 @@
 
 faced is a light-weight library to identify faces and it's features such as eyes, nose and mouth. It requires opencv.
 
+![](https://raw.github.com/gordalina/faced/master/images/lenna.features.png)
+Face is outlined in **black**, the eyes are **red** & **blue** for left and right respectively, the nose is outlined in **white** and the mouth in **blue**.
+
 ## Install
 
 ### As a dependency to your project
@@ -38,6 +41,8 @@ faced.detect('image.jpg', function (faces, image, file) {
   );
 });
 ```
+
+Its that simple! See the program used to [generate the above image](https://raw.github.com/gordalina/faced/master/examples/identify.js)
 
 ## API
 
