@@ -5,7 +5,7 @@ faced is a light-weight library to identify faces and it's features such as eyes
 ## Install
 
 ### As a dependency to your project
-Just add `"faced": "~1.0",` to your dependencies list in `package.json`.
+Just add `"faced": "~1.1",` to your dependencies list in `package.json`.
 
 ### Globally
 `npm install -g faced`
@@ -14,7 +14,7 @@ Just add `"faced": "~1.0",` to your dependencies list in `package.json`.
 
 ```javascript
 var faced = new Faced();
-faced.detect('image.jpg', function (faces, image) {
+faced.detect('image.jpg', function (faces, image, file) {
   if (!faces) {
     return console.log("No faces found!");
   }
@@ -45,9 +45,9 @@ faced.detect('image.jpg', function (faces, image) {
 
 Loads an image from the given `path` and executes `function` upon completion.
 
-If there were no issues loading the image you should receive two arguments to your function, `function (faces, image) { }`, the first is an array of `Face` whereas the second is a `Matrix` [object from opencv](https://npmjs.org/package/opencv#readme).
+The callback function expects a prototype like `function (faces, image, file) { }`, where the first is an array of `Face`, the second is a `Matrix` [object from opencv](https://npmjs.org/package/opencv#readme) and the third is the path of the image.
 
-In case of error, the callback function is called with no arguments.
+In case of error the arguments `faces` and `image` will be `undefined`.
 
 ### Class `Feature`
  - `Feature.getX()` Returns the upper left corner X position of the face
@@ -76,16 +76,16 @@ Other significant methods
 ## Examples
 
 ```bash
-$ node examples/gioconda.js
+$ node examples/identify.js images/lenna.png
 ```
 
-Then open `examples/gioconda.features.jpg` on your favourite image viewer.
+Then open `images/lenna.features.png` on your favourite image viewer.
 
 ## Information
 
 #### License
 
-node-faced is licensed under the [MIT license](http://opensource.org/licenses/MIT)
+faced is licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 #### Copyright
 
