@@ -43,7 +43,7 @@ faced.detect('image.jpg', function (faces, image, file) {
 });
 ```
 
-Its that simple! See the program used to [generate the above image](https://raw.github.com/gordalina/faced/master/examples/identify.js)
+Its that simple! See the program used to [generate the above image](https://github.com/gordalina/faced/blob/master/examples/identify.js)
 
 ## API
 
