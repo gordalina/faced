@@ -1,10 +1,10 @@
 # faced
 
-faced is a light-weight library to identify faces and it's features such as eyes, nose and mouth. It requires opencv.
+faced is a light-weight library for face recognition including features such as eyes, nose and mouth. It requires opencv.
 
 ![](https://raw.github.com/gordalina/faced/master/images/lenna.features.png)
 
-Face is outlined in **black**, the eyes are **red** & **blue** for left and right respectively, the nose is outlined in **white** and the mouth in **blue**.
+Face is outlined in **black**, the eyes are **red** & **green** for left and right respectively, the nose is outlined in **white** and the mouth in **blue**.
 
 ## Install
 
