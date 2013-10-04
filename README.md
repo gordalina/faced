@@ -6,7 +6,7 @@ faced is a light-weight library for face recognition including features such as 
 
 Face is outlined in **black**, the eyes are **red** & **green** for left and right respectively, the nose is outlined in **white** and the mouth in **blue**.
 
-## Install
+## Dependencies
 
 ### OpenCV
 Make sure you have [OpenCV](http://opencv.org/downloads.html) installed on your machine.
@@ -17,6 +17,8 @@ For MacOS X you can use [Homebrew](http://brew.sh)
 $ brew tap homebrew/science
 $ brew install opencv
 ```
+
+## Installation
 
 ### As a dependency to your project
 Just add `"faced": "1.x",` to your dependencies list in `package.json`.
