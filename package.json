@@ -19,9 +19,12 @@
     "url": "git://github.com/gordalina/faced.git"
   },
   "keywords": [
-    "face detection",
     "face",
-    "detection"
+    "face detection",
+    "face recognition",
+    "face identification",
+    "detection",
+    "recognition",
   ],
   "author": "Samuel Gordalina",
   "license": "MIT"
