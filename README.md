@@ -35,7 +35,7 @@ faced.detect('image.jpg', function (faces, image, file) {
     return console.log("No faces found!");
   }
 
-  var face = sface[0];
+  var face = faces[0];
 
   console.log(
     "Found a face at %d,%d with dimensions %dx%d",
@@ -50,7 +50,7 @@ faced.detect('image.jpg', function (faces, image, file) {
     face.getMouth() ? "has" : "does not have",
     face.getNose() ? "has" : "does not have",
     face.getEyeLeft() ? "has" : "does not have",
-    face.getEyeRight() ? "has" : "does not have",
+    face.getEyeRight() ? "has" : "does not have"
   );
 });
 ```
