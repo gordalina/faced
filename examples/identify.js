@@ -23,7 +23,7 @@ function worker(faces, image, file) {
     function draw(feature, color) {
         image.rectangle(
             [feature.getX(), feature.getY()],
-            [feature.getX2(), feature.getY2()],
+            [feature.getWidth(), feature.getHeight()],
             color,
             2
         );
