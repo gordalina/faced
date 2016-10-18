@@ -1,4 +1,5 @@
 # faced
+[![Build Status](https://travis-ci.org/gordalina/faced.svg?branch=master)](https://travis-ci.org/gordalina/faced)
 
 faced is a light-weight library for face recognition including features such as eyes, nose and mouth. It requires opencv.
 

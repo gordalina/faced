@@ -1,0 +1,27 @@
+sudo: required
+language: node_js
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - "6"
+  - "5"
+  - "4"
+  - "0.12"
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-5
+
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ./.travis/install.osx.sh; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ./.travis/install.linux.sh; fi
+
+install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm install; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then CXX=g++-5 npm install; fi

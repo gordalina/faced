@@ -2,7 +2,12 @@
   "name": "faced",
   "version": "1.2.0",
   "description": "light-weight library for face recognition including features such as eyes, nose and mouth.",
+  "author": "Samuel Gordalina",
+  "license": "MIT",
   "main": "lib/faced.js",
+  "engines": {
+    "node": ">=0.12"
+  },
   "directories": {
     "example": "examples"
   },
@@ -27,7 +32,5 @@
     "face identification",
     "detection",
     "recognition"
-  ],
-  "author": "Samuel Gordalina",
-  "license": "MIT"
+  ]
 }
