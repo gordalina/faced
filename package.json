@@ -1,6 +1,6 @@
 {
   "name": "faced",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "light-weight library for face recognition including features such as eyes, nose and mouth.",
   "author": "Samuel Gordalina",
   "license": "MIT",
