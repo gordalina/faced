@@ -15,13 +15,9 @@ Make sure you have [OpenCV](http://opencv.org/downloads.html) `v2.4.x` installed
 
 For MacOS X you can use [Homebrew](http://brew.sh)
 
-```
-$ brew tap homebrew/science
-$ brew install opencv
-
-# If you are running macOS 10.12 (Sierra) use the following command
-# See: https://github.com/Homebrew/homebrew-science/issues/4303
-$ brew install opencv --HEAD
+```bash
+brew install pkg-config opencv@2
+brew link opencv@2 --force
 ```
 
 ## Installation
